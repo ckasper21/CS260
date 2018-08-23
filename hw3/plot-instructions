@@ -1,0 +1,16 @@
+# run: gnuplot < plot-instructions
+# This line makes the output go to a png file instead of to the screen
+set output "plot.png"
+set terminal png
+
+set xlabel "n"
+set ylabel "time (s)"
+set title "fib(memo) vs time"
+set style function lines
+
+# This line does the plotting
+plot "data.out" using 1:3 lt -1 pt 3 title 'fib memo()'
+
+# If you are working interactively, you can now say "replot" if you
+# change the data file and it will re-plot the data
+

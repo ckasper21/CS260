@@ -1,0 +1,23 @@
+#     setupcode = '''
+# from problem1 import list_concat
+# from __main__ import makelist1, makelist2
+# list1 = makelist1()
+# list2 = makelist2()'''
+#     testcode = '''list_concat(list1,list2)'''
+#
+#     mytime = timeit.timeit(setup = setupcode,
+#                             stmt = testcode,
+#                             number = 1)
+#     print "list_concat: %.2f us" %(mytime*10**6) # Microseconds
+#
+#     setupcode = '''
+# from problem2 import list_concat_copy
+# from __main__ import makelist1, makelist2
+# list1 = makelist1()
+# list2 = makelist2()'''
+#     testcode = '''list_concat_copy(list1,list2)'''
+#
+#     mytime = timeit.timeit(setup = setupcode,
+#                             stmt = testcode,
+#                             number = 1)
+#     print "list_concat_copy: %.2f us" %(mytime*10**6)
